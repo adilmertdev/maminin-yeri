@@ -13,7 +13,7 @@
      3) Alttaki JSON-LD içindeki "url" ve "image" alanlarına da aynı adresi ekleyin.
 <link rel="canonical" href="https://ALAN-ADI/">
 <meta property="og:url" content="https://ALAN-ADI/">
-<meta property="og:image" content="https://ALAN-ADI/img/hero-hamburger.webp">
+<meta property="og:image" content="https://ALAN-ADI/img/hero-hamburger.webp?v=3">
      ================================================================ -->
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="tr_TR">
@@ -24,8 +24,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="preload" as="image" href="img/hero-hamburger.webp" imagesrcset="img/hero-hamburger-640.webp 640w, img/hero-hamburger.webp 1280w" imagesizes="100vw">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="preload" as="image" href="img/hero-hamburger.webp?v=3" imagesrcset="img/hero-hamburger-640.webp?v=3 640w, img/hero-hamburger.webp?v=3 1280w" imagesizes="100vw">
+<link rel="stylesheet" href="assets/site.css?v=3">
 <script>if(/[?&]shoot=1/.test(location.search))document.documentElement.classList.add('shoot');document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
 {
@@ -79,8 +79,8 @@
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-h">
     <picture class="hero__bg">
-      <source type="image/webp" srcset="img/hero-hamburger-640.webp 640w, img/hero-hamburger.webp 1280w" sizes="100vw">
-      <img src="img/hero-hamburger.webp" alt="Izgarada kızartılmış ekmekli, cheddarlı hamburger ve patates" width="1280" height="720" fetchpriority="high">
+      <source type="image/webp" srcset="img/hero-hamburger-640.webp?v=3 640w, img/hero-hamburger.webp?v=3 1280w" sizes="100vw">
+      <img src="img/hero-hamburger.webp?v=3" alt="Izgarada kızartılmış ekmekli, cheddarlı hamburger ve patates" width="1280" height="720" fetchpriority="high">
     </picture>
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="wrap hero__in">
@@ -115,7 +115,7 @@
   <section class="section signature" id="imza" aria-labelledby="imza-h">
     <div class="wrap signature__in">
       <figure class="signature__media reveal">
-        <img src="img/hero-hamburger.webp" srcset="img/hero-hamburger-640.webp 640w, img/hero-hamburger.webp 1280w" sizes="(min-width: 900px) 55vw, 100vw" alt="Ekmeği ızgarada kızartılmış, özel soslu, marul, domates, turşu, köfte ve cheddarlı hamburger, yanında patates" width="1280" height="720" loading="lazy" decoding="async">
+        <img src="img/hero-hamburger.webp?v=3" srcset="img/hero-hamburger-640.webp?v=3 640w, img/hero-hamburger.webp?v=3 1280w" sizes="(min-width: 900px) 55vw, 100vw" alt="İkiye kesilmiş, V şeklinde duran hamburger yarımları arasında uzayan cheddar ve ortada patates" width="1280" height="720" loading="lazy" decoding="async">
         <span class="stamp" aria-hidden="true">İmza<br>Lezzet</span>
       </figure>
       <div class="signature__text reveal">
@@ -329,6 +329,6 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="assets/main.js" defer></script>
-<script src="assets/order.js" defer></script>
+<script src="assets/order.js?v=3" defer></script>
 </body>
 </html>

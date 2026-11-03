@@ -5,7 +5,7 @@
   var WA_NUMBER='905426477210';
   var KEY='maminin-yeri-sepet-v1';
   var FOOD=[
-    {id:'hamburger',name:'Hamburger + patates',img:'hero-hamburger',tag:'İmza'},
+    {id:'hamburger',name:'Hamburger + patates',img:'hero-hamburger',tag:'İmza',v:3},
     {id:'balik',name:'Balık ekmek',img:'balik-ekmek'},
     {id:'kofte',name:'Köfte ekmek',img:'kofte-ekmek'},
     {id:'sucuk',name:'Sucuk ekmek',img:'sucuk-ekmek'},
@@ -33,7 +33,7 @@
   function esc(t){ return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
 
   function row(p,isFood){
-    var media=isFood?'<img src="img/thumb-'+p.img+'.webp" alt="" width="72" height="72" loading="lazy" decoding="async">':'<span class="ico" aria-hidden="true">'+p.ico+'</span>';
+    var media=isFood?'<img src="img/thumb-'+p.img+'.webp'+(p.v?'?v='+p.v:'')+'" alt="" width="72" height="72" loading="lazy" decoding="async">':'<span class="ico" aria-hidden="true">'+p.ico+'</span>';
     var note=isFood?'<input class="inote" data-note="'+p.id+'" maxlength="80" placeholder="Bu ürüne not (örn. soğansız)" aria-label="'+esc(p.name)+' için not">':'';
     return '<li class="item" data-id="'+p.id+'">'+media+
       '<div class="item__main"><span class="item__name">'+esc(p.name)+(p.tag?' <em class="mini">'+p.tag+'</em>':'')+'</span>'+note+'</div>'+
