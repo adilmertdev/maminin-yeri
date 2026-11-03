@@ -5,7 +5,7 @@
   var WA_NUMBER='905426477210';
   var KEY='maminin-yeri-sepet-v1';
   var FOOD=[
-    {id:'hamburger',name:'Hamburger + patates',img:'hero-hamburger',tag:'İmza',v:5},
+    {id:'hamburger',name:'Hamburger + patates',img:'hero-hamburger',tag:'İmza',v:6},
     {id:'balik',name:'Balık ekmek',img:'balik-ekmek'},
     {id:'kofte',name:'Köfte ekmek',img:'kofte-ekmek'},
     {id:'sucuk',name:'Sucuk ekmek',img:'sucuk-ekmek'},
