@@ -1,0 +1,6 @@
+screenshots/
+shoot.py
+test_order.py
+__pycache__/
+*.bak
+.DS_Store
